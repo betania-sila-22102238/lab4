@@ -10,6 +10,7 @@
 }
 
 body{
+  background-color: #1d7787;
   overflow-x: hidden;
 }
 
@@ -198,6 +199,7 @@ section {
 
 .grid-container {
   display: grid;
+  background-color: #1d7787;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 100px 1fr 100px;
   grid-template-areas:

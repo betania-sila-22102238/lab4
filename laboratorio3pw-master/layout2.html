@@ -25,6 +25,10 @@
       height: 100vh;
     }
 
+    body {
+      background-color: #1982af;
+    }
+
     header {
       grid-area: header;
       background-color: #1982af;
@@ -48,6 +52,62 @@
       background-color: #1982af;
       color: white;
       padding: 1rem;
+    }
+
+    @media only screen and (max-width: 768px) {
+
+      /* Estilos para dispositivos com largura máxima de 768px */
+      .sidebar {
+        width: 100%;
+        float: none;
+      }
+
+      .main-content {
+        width: 100%;
+        margin-right: 0;
+      }
+
+      body {
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 9vw 7vw 1fr 7vw 7vw;
+        grid-template-areas:
+          'header'
+          'menu'
+          'main'
+          'aside'
+          'footer';
+      }
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 992px) {
+
+      /* Estilos para dispositivos com largura entre 768px e 992px */
+      .sidebar {
+        width: 30%;
+        float: left;
+      }
+
+      .main-content {
+        width: 70%;
+        margin-right: 0;
+      }
+    }
+
+    @media only screen and (min-width: 992px) {
+
+      /* Estilos para dispositivos com largura mínima de 992px */
+      .sidebar {
+        width: 25%;
+        float: left;
+      }
+
+      .main-content {
+        width: 75%;
+        margin-right: 20px;
+      }
     }
   </style>
 </head>
