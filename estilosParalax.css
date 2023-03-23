@@ -1,11 +1,12 @@
 div.parallax {
-  margin: 30px;
+  margin: 35px;
   border: 3px solid rgb(0, 0, 0);
 }
 
 @media (max-width: 768px) {
   .parallax0 {
     background-image: url("images/capitalAfricaDoSul.jpg");
+    min-height: 200px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -64,6 +65,7 @@ div.parallax {
     
   .parallax0 {
     background-image: url("images/cidadeDeCabo2.jpg");
+    min-height: 200px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -100,7 +102,7 @@ div.parallax {
 }
 
 .parallax4 {
-  background-image: url("images/Windhoek.jpeg");
+  background-image: url("images/capitalNamibia\(\).jpg");
   min-height: 200px;
   background-attachment: fixed;
   background-position: center;

@@ -1,0 +1,48 @@
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Betânia Maria">
+    <meta name="description" content="Website sobre Bubaque">
+    <meta name="keywords" content="palavras chave">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <title>Bubaque</title>
+</head>
+
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="video/Turismo Guiné-Bissau 2019.mp4" type="video/mp4">
+    </video>
+
+    <!-- Optional: some overlay text to describe the video -->
+    <div class="content">
+        <h1>Bubaque</h1>
+        <p>A Ilha de Bubaque é um tesouro escondido do Atlântico, com suas praias imaculadas e uma riqueza cultural
+            única que encanta qualquer viajante.
+            As águas cristalinas da Ilha de Bubaque são um convite para explorar a beleza subaquática, enquanto suas
+            aldeias pitorescas são um lembrete de um modo de vida simples e tradicional.
+            Em Bubaque, o sorriso caloroso das pessoas e a hospitalidade genuína são tão envolventes quanto as paisagens
+            naturais, criando uma experiência de viagem inesquecível.
+        </p>
+        <!-- Use a button to pause/play the video with JavaScript -->
+        <button id="myBtn" onclick="myFunction()">Pause</button>
+    </div>
+
+    <script>
+        var video = document.getElementById("myVideo");
+        var btn = document.getElementById("myBtn");
+
+        function myFunction() {
+            if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+            } else {
+                video.pause();
+                btn.innerHTML = "Play";
+            }
+        }
+    </script>
+</body>
+
+</html>

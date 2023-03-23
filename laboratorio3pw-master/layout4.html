@@ -11,16 +11,33 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <style>
     /* CSS Grid styles for Layout 4 */
-    .grid-container {
-      display: grid;
-      grid-template-areas:
-        "header header"
-        "nav main"
-        "aside aside"
-        "footer footer";
-      grid-template-columns: 1fr 2fr;
-      grid-template-rows: auto 1fr auto auto;
-      height: 100vh;
+    @media (max-widh: 600px) {
+      .grid-container {
+        display: grid;
+        grid-template-areas:
+          "header"
+          "main"
+          "aside"
+          "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr 4fr 4fr 4fr;
+        height: 100vh;
+      }
+
+    }
+
+    @media (min-widh: 601px) {
+      .grid-container {
+        display: grid;
+        grid-template-areas:
+          "header header"
+          "nav main"
+          "aside aside"
+          "footer footer";
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto 1fr auto auto;
+        height: 100vh;
+      }
     }
 
     body {
