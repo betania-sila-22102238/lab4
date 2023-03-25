@@ -3,7 +3,7 @@ div.parallax {
   border: 3px solid rgb(0, 0, 0);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .parallax0 {
     background-image: url("images/capitalAfricaDoSul.jpg");
     min-height: 200px;
@@ -61,7 +61,7 @@ div.parallax {
 
 }
 
-@media (min-width: 769px) {
+@media (min-width: 601px) {
     
   .parallax0 {
     background-image: url("images/cidadeDeCabo2.jpg");
