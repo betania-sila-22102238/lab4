@@ -8,6 +8,35 @@
     <title>Animações</title>
 
     <style>
+        /* Estilo para o menu */
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ddd;
+        }
+
         #myDiv {
             width: 400px;
             height: 250px;
@@ -118,12 +147,17 @@
 </head>
 
 <body>
+    <nav>
+        <ul>
+            <ul>
+                <li><a href="index.html">Página Principal</a></li>
+            </ul>
+        </ul>
+    </nav>
 
 
     <h1>Deisi</h1>
-
     <p>Departamento de Engenharia Informática e Sistemas de Informação.</p>
-
     <br>
     <div id="myDiv">
     </div>
