@@ -5,7 +5,7 @@ div.parallax {
 
 @media (max-width: 600px) {
   .parallax0 {
-    background-image: url("images/capitalAfricaDoSul.jpg");
+    background-image: url("capitalAfricaDoSul.jpg");
     min-height: 200px;
     background-attachment: fixed;
     background-position: center;
@@ -25,7 +25,7 @@ div.parallax {
 }
 
 .parallax2 {
-  background-image: url("images/capitalMbabane.jpg");
+  background-image: url("capitalMbabane.jpg");
   min-height: 200px;
   background-attachment: fixed;
   background-position: center;
@@ -64,30 +64,60 @@ div.parallax {
 @media (min-width: 601px) {
     
   .parallax0 {
-    background-image: url("images/cidadeDeCabo2.jpg");
+    background-image: url("cidadeDeCabo2.jpg");
+    min-height: 200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   
 
 .parallax1 {
-  background-image: url("images/Gaborone2.jpg");
+  background-image: url("Gaborone2.jpg");
+  min-height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .parallax2 {
-  background-image: url("images/mbambane.jpg")
+  background-image: url("mbambane.jpg");
+  min-height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
 
 .parallax3 {
-  background-image: url("images/Maseru.jpg");
+  background-image: url("Maseru.jpg");
+  min-height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
  
 }
 
 .parallax4 {
   background-image: url("images/capitalNamibia\(\).jpg");
+  min-height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .parallax5 {
   background-image: url("https://source.unsplash.com/random/1920x1080/?learning");
+  min-height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
   
 }
