@@ -1,48 +1,51 @@
 <!DOCTYPE html>
-
 <html lang="pt">
-
 <head>
   <title>Hero Page</title>
   <meta charset="utf-8">
   <meta name="author" content="Betânia Maria">
   <meta name="description" content="Website">
   <meta name="keywords" content="palavras chave">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
-
 <body>
-<div class="grid-container">
-  <header>
-    <h1>Programação Web 2023</h1>
+<div class="container">
+  <header class="my-4">
+    <h1 class="display-4">Programação Web 2023</h1>
   </header>
- 
-  <br>
-  <nav>
-    <a href="../../../templates/portfolio/index.html">Home</a>
-    <a href="#news">News</a>
-    <div class="dropdown">
-      <button class="dropbtn">
-        Dropdown
-        <br>
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="laboratorio2PW-main/index.html" class="opcao">Laboratório 1 e 2</a>
-        <a href="laboratorio3pw-master/index.html" class="opcao">Laboratório 3</a>
-        <a href="paralax.html" class="opcao">África Meridional</a>
-        <a href="animacoes.html" class="opcao">Animações</a>
-        <a href="Bubaque.html" class="opcao"> Bubaque</a>
-      </div>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">Menu</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Laboratórios
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="laboratorio2PW-main/index.html">Laboratório 1 e 2</a>
+            <a class="dropdown-item" href="laboratorio3pw-master/index.html">Laboratório 3</a>
+            <a class="dropdown-item" href="paralax.html">África Meridional</a>
+            <a class="dropdown-item" href="animacoes.html">Animações</a>
+            <a class="dropdown-item" href="Bubaque.html">Bubaque</a>
+          </div>
+        </li>
+      </ul>
+      <a class="btn btn-primary" href="https://betamariam.pythonanywhere.com/">Voltar ao Portfólio</a>
     </div>
   </nav>
 
-  <div class="img-bg"></div>
-
   <main>
-    <p>Mova o rato sobre o link "Dropdown" para ver o menu dropdown.</p>
+    <p class="lead">Mova o rato sobre o link "Laboratórios" para ver o menu com os Laboratórios.</p>
   </main>
-
 </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
