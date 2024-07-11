@@ -1,131 +1,129 @@
 <!DOCTYPE html>
-
 <html lang="pt">
 
 <head>
-
-    <Bubaque>
-
-        <meta charset="utf-8">
-        <meta name="author" content="Betânia Maria">
-        <meta name="description" content="Website sobre Bubaque">
-        <meta name="keywords" content="palavras chave">
-        <link rel="stylesheet" type="text/css" href="estilos.css">
-
-        <style>
-            nav {
-                display: flex;
-                justify-content: center;
-            }
-
-            nav ul {
-                margin: 0;
-                padding: 0;
-                list-style: none;
-                display: flex;
-            }
-
-            nav li {
-                margin: 0 10px;
-            }
-        </style>
-
-</head>
-
-<body>
-
-    <header>
-
-        <h1>Bubaque</h1>
-
-
-        <figure>
-
-            <img src="images/mango-lodge.jpg" alt="Bubaque">
-            <br>
-            <details>
-                <figcaption>
-                    <p>Paraíso escondido</p>
-                </figcaption>
-            </details>
-
-        </figure>
-
-
-    </header>
-
+    <meta charset="utf-8">
+    <meta name="author" content="Betânia Maria">
+    <meta name="description" content="Website sobre Bubaque">
+    <meta name="keywords" content="palavras chave">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubaque</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
     <style>
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ddd;
+        }
+
         h1 {
             color: rgb(0, 179, 255);
         }
     </style>
+</head>
 
+<body>
+    <div class="container">
+        <header class="my-4 text-center">
+            <h1>Bubaque</h1>
+            <figure>
+                <img src="images/mango-lodge.jpg" alt="Bubaque" class="img-fluid">
+                <br>
+                <details>
+                    <figcaption>
+                        <p>Paraíso escondido</p>
+                    </figcaption>
+                </details>
+            </figure>
+        </header>
 
-    <nav>
-        <ul>
-            <ul>
-                <li><a href="../index.html">Voltar ao Menu de Laboratório |</a></li>
-            </ul>
-        </ul>
-        <b><a href="index.html">Home |</a></b>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Menu</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Voltar ao Menu de Laboratório</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="info.html">Informação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="multimedia.html">Multimédia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="local.html">Localização</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quizz.html">Quizz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html5-css.html">Html e Css</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="estilos.css">Estilos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-        <b><a href="info.html">Informação |</a></b>
+        <main>
+            <section class="my-4">
+                <h2>Bubaque</h2>
+                <p>Bubaque é uma das ilhas do Arquipélago dos Bijagós na Guiné-Bissau, administrativamente pertence à região de Bolama e ao sector de Bubaque. Nesta ilha também está assentada a cidade de Bubaque. A ilha de Bubaque, com uma área de 48 km² e cerca de 11 300 habitantes. A ilha é conhecida por sua vida selvagem e tem uma área florestal muito grande, sendo uma importante atração turística para a nação.</p>
+            </section>
 
-        <b><a href="multimedia.html">Multimédia |</a></b>
+            <section class="my-4">
+                <p> Este website fala sobre a cidade de Bubaque.</p>
+                <p> Nele encontra Informação sobre:</p>
+                <ol>
+                    <li>A sua <a href="local.html">Localização</a> </li>
+                    <li>Conteúdos <a href="multimedia.html">Multimédia</a> </li>
+                    <li>Diversas <a href="info.html">Informações</a> </li>
+                </ol>
+            </section>
 
-        <b><a href="local.html">Localização |</a></b>
+            <section class="my-4">
+                <img src="images/wordcloud.jpg" class="img-fluid" alt="Word Cloud">
+            </section>
+        </main>
 
-        <b><a href="quizz.html">Quizz |</a></b>
+        <footer class="text-center my-4">
+            <p>Betânia Maria Queta.</p>
+        </footer>
+    </div>
 
-
-    </nav>
-
-    <main>
-
-        <section>
-
-            <h2>Bubaque</h2>
-
-            <p>Bubaque é uma das ilhas do Arquipélago dos Bijagós na Guiné-Bissau, administrativamente pertence à região
-                de Bolama e ao sector de Bubaque. Nesta ilha também está assentada a cidade de Bubaque.
-                A ilha de Bubaque, com uma área de 48 km² e cerca de 11 300 habitantes.
-                A ilha é conhecida por sua vida selvagem e tem uma área florestal muito grande, sendo uma importante
-                atração turística para a nação.</p>
-
-        </section>
-
-        <section>
-
-            <p> Este website fala sobre a cidade de Bubaque.</p>
-
-            <p> Nele encontra Informação sobre:</p>
-
-            <ol>
-                <li>A sua <a href="local.html">Localização</a> </li>
-                <li>Conteúdos <a href="multimedia.html">Multimédia</a> </li>
-                <li>Diversas <a href="info.html">Informações</a> </li>
-            </ol>
-
-        </section>
-
-        <section>
-
-            <img src="images/wordcloud.jpg">
-
-            <br>
-
-        </section>
-
-    </main>
-
-    <footer>
-
-        <p>
-            Betânia Maria Queta Silá, aluna número 22102238, estudante de engenharia informática na ULHT, 2º ano.
-        </p>
-
-    </footer>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

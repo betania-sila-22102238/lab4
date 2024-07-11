@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ddd;
+}
+
+#myDiv {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    background-image: url(deisi-inverse.svg);
+    background-color: rgb(18, 196, 209);
+    border: 1px solid black;
+    transform: rotateZ(0deg);
+    transition: width 2s;
+}
+
+#myDiv:hover {
+    width: 100%;
+    max-width: 910px;
+}
+
+img {
+    border-radius: 50%;
+    animation-name: roda;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes roda {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#meuDesenho {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    background-image: url(image.svg);
+    background-color: rgb(18, 196, 209);
+    border: 1px solid black;
+    transform: rotateZ(0deg);
+    transition: width 2s;
+}
+
+#meuDesenho:hover {
+    width: 100%;
+    max-width: 600px;
+}
+
+.poema {
+    margin: 0 auto;
+    width: 80%;
+    font-family: Arial, sans-serif;
+}
+
+.quadra {
+    margin-bottom: 2em;
+}
+
+.quadra p {
+    margin: 0;
+    transition: color 0.5s ease-in-out;
+}
+
+.quadra:first-child p:first-child {
+    font-size: 1.5em;
+}
+
+.quadra:nth-child(2) p:nth-child(2) {
+    transform: rotate(3deg);
+}
+
+.quadra:nth-child(3) p:nth-child(3) {
+    color: #ff0000;
+}
+
+.quadra:last-child p:last-child {
+    font-style: italic;
+}
+
+.quadra:hover p {
+    color: #008000;
+}

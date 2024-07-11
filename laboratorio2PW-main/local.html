@@ -1,92 +1,85 @@
 <!DOCTYPE html>
-
 <html lang="pt">
 
 <head>
-
-    <Bubaque>
-
-        <meta charset="utf-8">
-        <meta name="author" content="Betânia Maria">
-        <meta name="description" content="Website sobre Bubaque">
-        <meta name="keywords" content="palavras chave">
-        <link rel="stylesheet" type="text/css" href="estilos.css">
-
+    <meta charset="utf-8">
+    <meta name="author" content="Betânia Maria">
+    <meta name="description" content="Website sobre Bubaque">
+    <meta name="keywords" content="palavras chave">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubaque</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
 
 <body>
+    <div class="container">
+        <header class="my-4 text-center">
+            <h1>Bubaque</h1>
+            <figure>
+                <img src="images/mango-lodge.jpg" alt="Bubaque" class="img-fluid">
+                <br>
+                <details>
+                    <figcaption>
+                        <p>Paraíso escondido</p>
+                    </figcaption>
+                </details>
+            </figure>
+        </header>
 
-    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Menu</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Voltar ao Menu de Laboratório</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="info.html">Informação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="multimedia.html">Multimédia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="local.html">Localização</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quizz.html">Quizz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html5-css.html">Html e Css</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-        <h1>Bubaque</h1>
+        <main>
+            <section class="my-4">
+                <h2>Localização</h2>
+                <p>Bubaque fica situada no canto Sudeste do Arquipélago, separada por um estreito canal de Rubane e relativamente próxima das Ilhas de Soga e Canhabaque.</p>
+            </section>
 
-        <figure>
-            <img src="images/mango-lodge.jpg" alt="Bubaque">
-            <br>
-            <details>
-                <figcaption>
-                    <p>Paraíso escondido</p>
-                </figcaption>
-            </details>
-        </figure>
+            <section class="my-4">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15650.017556061315!2d-15.844945934898723!3d11.297796813503979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xee0de43b46221eb%3A0x50cf0af2ca562204!2sBubaque%2C%20Guin%C3%A9-Bissau!5e0!3m2!1spt-PT!2spt!4v1676766068250!5m2!1spt-PT!2spt" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+        </main>
 
-    </header>
+        <footer class="text-center my-4">
+            <p>Betânia Maria Queta</p>
+        </footer>
+    </div>
 
-    <style>
-        h1 {
-            color: rgb(0, 179, 255);
-        }
-    </style>
-
-    <nav>
-        <ul>
-            <ul>
-                <li><a href="../index.html">Voltar ao Menu de Laboratórios |</a></li>
-            </ul>
-        </ul>
-        <b><a href="index.html">Home |</a></b>
-        <b><a href="info.html">Informação |</a></b>
-        <b><a href="multimedia.html">Multimédia |</a></b>
-        <b><a href="local.html">Localização |</a></b>
-        <b><a href="quizz.html">Quizz |</a></b>
-        <b><a href="html5-css.html">Html e Css |</a></b>
-
-    </nav>
-
-
-    <main>
-
-        <section>
-
-            <h2>Localização</h2>
-
-            <p>Bubaque fica situada no canto Sudeste do Arquipélago, separada por um estreito canal de Rubane e
-                relativamente
-                próxima das Ilhas de Soga e Canhabaque.</p>
-
-        </section>
-
-
-        <section>
-
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15650.017556061315!2d-15.844945934898723!3d11.297796813503979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xee0de43b46221eb%3A0x50cf0af2ca562204!2sBubaque%2C%20Guin%C3%A9-Bissau!5e0!3m2!1spt-PT!2spt!4v1676766068250!5m2!1spt-PT!2spt"
-                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-
-        </section>
-
-    </main>
-
-    <footer>
-
-        <p>
-            Betânia Maria Queta Silá, aluna número 22102238, estudante de engenharia informática na
-            ULHT, 2º ano.
-        </p>
-
-    </footer>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>

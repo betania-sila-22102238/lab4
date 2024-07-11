@@ -1,220 +1,251 @@
 <!DOCTYPE html>
-
 <html lang="pt">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Betânia Maria">
+    <meta name="description" content="Website sobre Bubaque">
+    <meta name="keywords" content="palavras chave">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubaque</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <style>
+        nav {
+            display: flex;
+            justify-content: center;
+        }
 
-    <Bubaque>
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+        }
 
-        <meta charset="utf-8">
-        <meta name="author" content="Betânia Maria">
-        <meta name="description" content="Website sobre Bubaque">
-        <meta name="keywords" content="palavras chave">
-        <link rel="stylesheet" type="text/css" href="estilos.css">
+        nav li {
+            margin: 0 10px;
+        }
 
+        nav a {
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ddd;
+        }
+
+        h1 {
+            color: rgb(0, 179, 255);
+        }
+
+        table th, table td {
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="container">
+        <header class="my-4 text-center">
+            <h1>Bubaque</h1>
+            <figure>
+                <img src="images/mango-lodge.jpg" alt="Bubaque" class="img-fluid">
+                <br>
+                <details>
+                    <figcaption>
+                        <p>Paraíso escondido</p>
+                    </figcaption>
+                </details>
+            </figure>
+        </header>
 
-    <header>
-        <h1>Bubaque</h1>
-        <figure>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Menu</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Página Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="info.html">Informação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="multimedia.html">Multimédia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="local.html">Localização</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quizz.html">Quizz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html5-css.html">Html e Css</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-            <img src="images/mango-lodge.jpg" alt="Bubaque">
-            <br>
-            <details>
-                <figcaption>
-                    <p>Paraíso escondido</p>
-                </figcaption>
-            </details>
+        <main>
+            <section class="my-4">
+                <h3>HTML e CSS</h3>
 
-        </figure>
+                <section class="my-4">
+                    <h3>HTML</h3>
+                    <p>HTML é uma linguagem de marcação simples, mas poderosa, que permite criar páginas da web com facilidade</p>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Elementos Semânticos Html</th>
+                                <th>Utilização em páginas</th>
+                                <th>Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Header</td>
+                                <td>😀</td>
+                                <td>Usado em todas as páginas para indicar cabeçalhos.</td>
+                            </tr>
+                            <tr>
+                                <td>Nav</td>
+                                <td>😀</td>
+                                <td>Usado em todas as páginas para indicar menu de navegação com links para as diferentes páginas </td>
+                            </tr>
+                            <tr>
+                                <td>Main</td>
+                                <td>😀</td>
+                                <td>Usado em todas as páginas para indicar os conteúdos principais de cada página com exceção desta página</td>
+                            </tr>
+                            <tr>
+                                <td>Article</td>
+                                <td> 🙄</td>
+                                <td>Serve para indicar porção do documento que pode ser vista de forma independente.</td>
+                            </tr>
+                            <tr>
+                                <td>Section</td>
+                                <td>😀</td>
+                                <td>Usada em todas as páginas para especificar uma parte do conteúdo, usada em conjunto com etiquetas.</td>
+                            </tr>
+                            <tr>
+                                <td>Aside</td>
+                                <td> 🙄</td>
+                                <td>Serve para indicar anotações, publicidade ou outros assuntos desconexos.</td>
+                            </tr>
+                            <tr>
+                                <td>Footer</td>
+                                <td>😀</td>
+                                <td>Usada em todas as páginas para indicar rodapé da secção</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
 
-    </header>
+                <section class="my-4">
+                    <h3>CSS</h3>
+                    <p>CSS, ou Cascading Style Sheets, é uma linguagem de estilo usada para controlar a aparência e layout de páginas da web, permitindo que os desenvolvedores alterem as cores, fontes, espaçamento, posicionamento e outros aspectos visuais de um site de forma rápida e fácil.</p>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Seletores Css</th>
+                                <th>Utilização em páginas</th>
+                                <th>Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Universal</td>
+                                <td>😀</td>
+                                <td>O seletor universal (*) aplica o estilo a todos os elementos da página. Usei no cabeçalho de todas as páginas.</td>
+                            </tr>
+                            <tr>
+                                <td>Tipo</td>
+                                <td>😀</td>
+                                <td>O seletor de tipo usa o nome do marcador a estilizar</td>
+                            </tr>
+                            <tr>
+                                <td>Classe</td>
+                                <td>❌</td>
+                                <td>O seletor de classe associa um nome a um estilo.</td>
+                            </tr>
+                            <tr>
+                                <td>Id</td>
+                                <td>😀</td>
+                                <td>O atributo id permite identificar univocamente um elemento do HTML (muito útil no JavaScript) usei na página Multimédia, para identificar alguns elementos.</td>
+                            </tr>
+                            <tr>
+                                <td>Atributo</td>
+                                <td>😀</td>
+                                <td>Seletores que se aplicam a atributos de elementos.</td>
+                            </tr>
+                            <tr>
+                                <td>Pseudo-Classe</td>
+                                <td>❌</td>
+                                <td>Seletor associado ao estado de um elemento</td>
+                            </tr>
+                            <tr>
+                                <td>Pseudo-Elemento</td>
+                                <td>😀</td>
+                                <td>Usada para indicar rodapé da secção. Usei em todas as páginas</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
 
-    <style>
-        h1 {
-          color: rgb(0, 179, 255);
-        }
-      </style>
-      
+                <section class="my-4">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Combinadores de Seletores Css</th>
+                                <th>Utilização em páginas</th>
+                                <th>Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Seletor Descendente</td>
+                                <td>❌</td>
+                                <td>O seletor descendente corresponde a todos os elementos que são descendentes de um especificado elemento.</td>
+                            </tr>
+                            <tr>
+                                <td>Seletor Filho (&gt;)</td>
+                                <td>❌</td>
+                                <td>O seletor filho seleciona todos os elementos que são os filhos de um elemento especificado.</td>
+                            </tr>
+                            <tr>
+                                <td>Seletor de irmãos adjacente (+)</td>
+                                <td>❌</td>
+                                <td>O seletor irmão adjacente é usado para selecionar um elemento que é diretamente depois de outro elemento específico.</td>
+                            </tr>
+                            <tr>
+                                <td>Seletor geral de irmãos (~)</td>
+                                <td>❌</td>
+                                <td>O seletor de irmãos gerais seleciona todos os elementos que são irmãos próximos de um elemento especificado.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+        </main>
 
-    <nav>
-        <ul>
-            <ul>
-                <li><a href="../index.html">Página Principal |</a></li>
-            </ul>
-        </ul>
-        <b><a href="index.html">Home |</a></b>
-        <b><a href="info.html">Informação |</a></b>
-        <b><a href="multimedia.html">Multimédia |</a></b>
-        <b><a href="local.html">Localização |</a></b>
-        <b><a href="quizz.html">Quizz |</a></b>
-        <b><a href="html5-css.html">Html e Css |</a></b>
+        <footer class="text-center my-4">
+            <p>Betânia Maria Queta Silá</p>
+        </footer>
+    </div>
 
-    </nav>
-
-
-    <h3>HTML e CSS</h3>
-
-    <section>
-        <h3>HTML</h3>
-        <p>HTML é uma linguagem de marcação simples, mas poderosa, que permite criar páginas da web com facilidade</p>
-        <table border="4">
-            <tr>
-                <td>Elementos Semanticos Html</td>
-                <td>Utilização em páginas</td>
-                <td>Descrição</td>
-            </tr>
-            <tr>
-                <td>Header</td>
-                <td>😀</td>
-                <td>Usado em todas as páginas para indicar cabeçalhos.</td>
-            </tr>
-            <tr>
-                <td>Nav</td>
-                <td>😀</td>
-                <td>Usado em todas as páginas para indicar menu de navegação com links para as diferentes páginas </td>
-            </tr>
-            <tr>
-                <td>Main</td>
-                <td>😀</td>
-                <td>Usado em todas as páginas para indicar os conteúdos principais de cada página com exceção desta página</td>
-            </tr>
-            <tr>
-                <td>Article</td>
-                <td> 🙄</td>
-                <td>Serve para indicar porção do 
-                    documento que pode ser vista de forma independente.</td>
-            </tr>
-
-            <tr>
-                <td>Section</td>
-                <td>😀</td>
-                <td>Usada em todas as páginas para especificar uma parte do conteúdo, usada em conjunto com etiquetas.</td>
-            </tr>
-
-            <tr>
-                <td>Aside</td>
-                <td> 🙄</td>
-                <td>Serve para indicar anotações, publicidade ou outros assuntos 
-                    desconexos.</td>
-            </tr>
-
-            <tr>
-                <td>Footer</td>
-                <td>😀</td>
-                <td>Usada em todas as páginas para indicar rodapé da secção</td>
-            </tr>
-
-        </table>
-
-        <section>
-       
-            <h3>CSS</h3>
-    
-            <p>CSS, ou Cascading Style Sheets, é uma linguagem de estilo usada para controlar a aparência e layout de páginas da web, permitindo que os desenvolvedores alterem as cores, fontes, espaçamento, posicionamento e outros aspectos visuais de um site de forma rápida e fácil.</p>
-        
-
-            <section>
-            <p>
-                <table border="">
-                    <tr>
-                        <td>Seletores Css</td>
-                        <td>Utilização em páginas</td>
-                        <td>Descrição</td>
-                    </tr>
-                    <tr>
-                        <td>Universal</td>
-                        <td>😀</td>
-                        <td>O seletor universal (*) aplica o estilo a todos os elementos da 
-                            página. Usei no cabeçalho de todas as páginas.</td>
-                    </tr>
-                    <tr>
-                        <td>Tipo</td>
-                        <td>😀</td>
-                        <td> O seletor de tipo usa o nome do marcador a estilizar</td>
-                    </tr>
-                    <tr>
-                        <td>Classe</td>
-                        <td>❌</td>
-                        <td>O seletor de classe associa um nome a um estilo.</td>
-                    </tr>
-                    <tr>
-                        <td>Id</td>
-                        <td>😀</td>
-                        <td>O atributo id permite identificar univocamente um elemento 
-                            do HTML (muito útil no JavaScript) usei na página Multimédia, para identificar alguns elementos.</td>
-                    </tr>
-        
-                    <tr>
-                        <td>Atributo</td>
-                        <td>😀</td>
-                        <td>Seletores que se aplicam a atributos de elementos.</td>
-                    </tr>
-        
-                    <tr>
-                        <td>Pseudo-Classe</td>
-                        <td>❌</td>
-                        <td> Seletor associado ao estado de um elemento</td>
-                    </tr>
-        
-                    <tr>
-                        <td>Pseudo-Elemento</td>
-                        <td>😀</td>
-                        <td>Usada para indicar rodapé da secção. Usei em todas as páginas</td>
-                    </tr>
-        
-                </table>
-            </p>      
-           
-        </section>
-
-        <section>
-
-            <table border="1">
-                <tr>
-                    <td>Combinadores de Seletores Css</td>
-                    <td>Utilização em páginas</td>
-                    <td>Descrição</td>
-                </tr>
-                <tr>
-                    <td>Seletor Descendente</td>
-                    <td>❌</td>
-                    <td>O seletor descendente corresponde a todos os elementos que são descendentes de um especificado elemento.</td>
-                </tr>
-                <tr>
-                    <td>Seletor Filho(>)</td>
-                    <td>❌</td>
-                    <td>O seletor filho seleciona todos os elementos que são os filhos de um elemento especificado.</td>
-                </tr>
-                <tr>
-                    <td>Seletor de irmãos adjacente (+)</td>
-                    <td>❌</td>
-                    <td>O seletor irmão adjacente é usado para selecionar um elemento que é diretamente depois de outro elemento específico.</td>
-                </tr>
-    
-                <tr>
-                    <td>Seletor geral de irmãos (~)</td>
-                    <td>❌</td>
-                    <td>O seletor de irmãos gerais seleciona todos os elementos que são irmãos próximos de um elemento especificado.</td>
-                </tr>
-    
-            </table>
-      
-        </section>
-
-    </section>
-
-    <footer>
-
-        <p>
-            Betânia Maria Queta Silá, aluna número 22102238, estudante de engenharia informática na ULHT, 2º ano.
-        </p>
-
-    </footer>
-
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

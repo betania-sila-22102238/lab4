@@ -7,118 +7,130 @@
     <meta name="author" content="Betânia Maria">
     <meta name="description" content="Website">
     <meta name="keywords" content="palavras chave">
-    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
 
 <body>
 
-    <header>
+    <header class="bg-primary text-white text-center py-4">
         <h1>Conhecimento é Poder</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html" class="button">Voltar ao Menu de Laboratórios</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Menu</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Voltar ao Menu de Laboratórios</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <section id="secao0">
+    <main class="container my-4">
+        <section id="secao0" class="text-center">
             <div class="container">
                 <p class="texto">Aprender 📚</p>
             </div>
         </section>
 
-        <section id="secao1">
-            <div class="position-relative">
-                <img class="img-banner" src="https://source.unsplash.com/random/1920x1080/?learning" alt="">
-                <p class="position-absolute">
-                    Estudar e Aprender são coisas que jamais iremos parar de fazer. <br>
-                    Certamente que o pior entre nós é o ignorante que acha que sabe tudo.
-                </p>
-            </div>
+        <section id="secao1" class="position-relative text-center my-4">
+            <img class="img-banner img-fluid" src="https://source.unsplash.com/random/1920x1080/?learning" alt="">
+            <p class="position-absolute text-white bg-dark p-2 rounded" style="top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                Estudar e Aprender são coisas que jamais iremos parar de fazer. <br>
+                Certamente que o pior entre nós é o ignorante que acha que sabe tudo.
+            </p>
         </section>
 
         <section id="secao2">
-            <h1>Capitais Europeias</h1>
-            <div class="capitais">
-                <div>
-                    <img src="images/bruxelas.jpg" alt="">
+            <h1 class="text-center my-4">Capitais Europeias</h1>
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-2 mb-4 text-center">
+                    <img src="images/bruxelas.jpg" alt="" class="img-fluid rounded">
                     <p>Bruxelas</p>
                 </div>
-
-                <div>
-                    <img src="images/budapeste.jpg" alt="">
+                <div class="col-6 col-md-4 col-lg-2 mb-4 text-center">
+                    <img src="images/budapeste.jpg" alt="" class="img-fluid rounded">
                     <p>Budapeste</p>
                 </div>
-
-                <div>
-                    <img src="images/lisboa.jpg" alt="">
+                <div class="col-6 col-md-4 col-lg-2 mb-4 text-center">
+                    <img src="images/lisboa.jpg" alt="" class="img-fluid rounded">
                     <p>Lisboa</p>
                 </div>
-
-                <div><img src="images/download.jpg" alt="">
+                <div class="col-6 col-md-4 col-lg-2 mb-4 text-center">
+                    <img src="images/download.jpg" alt="" class="img-fluid rounded">
                     <p>Londres</p>
                 </div>
-
-                <div><img src="images/milao.jpg" alt="">
+                <div class="col-6 col-md-4 col-lg-2 mb-4 text-center">
+                    <img src="images/milao.jpg" alt="" class="img-fluid rounded">
                     <p>Milão</p>
                 </div>
-
-                <div><img src="images/paris.jpg" alt="">
+                <div class="col-6 col-md-4 col-lg-2 mb-4 text-center">
+                    <img src="images/paris.jpg" alt="" class="img-fluid rounded">
                     <p>Paris</p>
                 </div>
-
-                <div><img src="images/praga.jpg" alt="">
+                <div class="col-6 col-md-4 col-lg-2 mb-4 text-center">
+                    <img src="images/praga.jpg" alt="" class="img-fluid rounded">
                     <p>Praga</p>
                 </div>
-
-                <div><img src="images/reykiavik.jpg" alt="">
+                <div class="col-6 col-md-4 col-lg-2 mb-4 text-center">
+                    <img src="images/reykiavik.jpg" alt="" class="img-fluid rounded">
                     <p>Reykiavik</p>
                 </div>
-
-                <div><img src="images/roma.jpg" alt="">
+                <div class="col-6 col-md-4 col-lg-2 mb-4 text-center">
+                    <img src="images/roma.jpg" alt="" class="img-fluid rounded">
                     <p>Roma</p>
                 </div>
-
-                <div><img src="images/varsovia.jpg" alt="">
+                <div class="col-6 col-md-4 col-lg-2 mb-4 text-center">
+                    <img src="images/varsovia.jpg" alt="" class="img-fluid rounded">
                     <p>Varsóvia</p>
                 </div>
-
-                <div><img src="images/viena.jpg" alt="">
+                <div class="col-6 col-md-4 col-lg-2 mb-4 text-center">
+                    <img src="images/viena.jpg" alt="" class="img-fluid rounded">
                     <p>Viena</p>
                 </div>
             </div>
         </section>
 
-        <section id="secao3">
+        <section id="secao3" class="text-center my-4">
             <div class="container1">
-                <div class="circle"><i class="material-icons">phone</i></div>
-                <div class="circle"><i class="material-icons">camera</i></div>
-                <div class="circle"><i class="material-icons">cloud</i></div>
+                <div class="circle bg-primary text-white d-inline-flex justify-content-center align-items-center m-2">
+                    <i class="material-icons">phone</i>
+                </div>
+                <div class="circle bg-primary text-white d-inline-flex justify-content-center align-items-center m-2">
+                    <i class="material-icons">camera</i>
+                </div>
+                <div class="circle bg-primary text-white d-inline-flex justify-content-center align-items-center m-2">
+                    <i class="material-icons">cloud</i>
+                </div>
             </div>
         </section>
 
-        <section id="secao4">
-            <div class="grid-container">
-                <main class="item3">
+        <section id="secao4" class="my-4">
+            <div class="grid-container row">
+                <div class="item3 col-12 bg-light p-4 rounded">
                     <h1>Adquirir conhecimento</h1>
                     <p>Investir em educação é investir em si mesmo</p>
-                </main>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <table>
-            <tr>
-                <td class="footerName">
-                    <p>Betânia Maria Queta Silá. Lusófona DEISI Programação WEB 2023</p>
-                </td>
-            </tr>
-        </table>
+    <footer class="text-center bg-dark text-white py-4">
+        <p>Betânia Maria Queta Silá. Lusófona DEISI Programação WEB 2023</p>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

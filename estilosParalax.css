@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
 * {
   margin: 0;
   padding: 0;
@@ -37,7 +40,7 @@ nav ul li a:hover {
   border-radius: 5px;
 }
 
-main .content {
+.content {
   padding: 2em;
   text-align: center;
   background-color: #f4f4f4;

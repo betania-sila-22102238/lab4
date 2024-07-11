@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt">
 
 <head>
@@ -5,11 +6,12 @@
     <meta name="author" content="Betânia Maria">
     <meta name="description" content="Website sobre Bubaque">
     <meta name="keywords" content="palavras chave">
-    <link rel="stylesheet" type="text/css" href="estilos.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bubaque</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="estilos_bubaque.css">
     <style>
-        /* Style the video: 100% width and height to cover the entire window */
+        /* Estilo para o vídeo: 100% largura e altura para cobrir a janela inteira */
         #myVideo {
             position: fixed;
             right: 0;
@@ -18,17 +20,18 @@
             min-height: 100%;
         }
 
-        /* Add some content at the bottom of the video/page */
+        /* Adiciona conteúdo no fundo do vídeo/página */
         .content {
-            position: fixed;
+            position: absolute;
             bottom: 0;
             background: rgba(0, 0, 0, 0.5);
             color: #f1f1f1;
             width: 100%;
             padding: 20px;
+            text-align: center;
         }
 
-        /* Style the button used to pause/play the video */
+        /* Estilo do botão usado para pausar/tocar o vídeo */
         #myBtn {
             width: 200px;
             font-size: 18px;
@@ -41,37 +44,44 @@
 
         #myBtn:hover {
             background: #ddd;
-            color: rgba(0, 0, 0, 0.356);
+            color: #000;
         }
     </style>
 </head>
 
-
 <body>
-    <nav>
-        <ul>
-            <ul>
-                <li><a href="index.html">Página Principal</a></li>
-            </ul>
-        </ul>
-    </nav>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Menu</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Página Principal</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-    <video autoplay muted loop id="myVideo">
-       <source src="video/videoplayback.mp4" type="video/mp4">   
-    </video>
-  
-    <!-- Optional: some overlay text to describe the video -->
-    <div class="content">
-        <h1>Bubaque</h1>
-        <p>A Ilha de Bubaque é um tesouro escondido do Atlântico, com suas praias imaculadas e uma riqueza cultural
-            única que encanta qualquer viajante.
-            As águas cristalinas da Ilha de Bubaque são um convite para explorar a beleza subaquática, enquanto suas
-            aldeias pitorescas são um lembrete de um modo de vida simples e tradicional.
-            Em Bubaque, o sorriso caloroso das pessoas e a hospitalidade genuína são tão envolventes quanto as paisagens
-            naturais, criando uma experiência de viagem inesquecível.
-        </p>
-        <!-- Use a button to pause/play the video with JavaScript -->
-        <button id="myBtn" onclick="myFunction()">Pause</button>
+        <video autoplay muted loop id="myVideo">
+            <source src="video/videoplayback.mp4" type="video/mp4">
+        </video>
+
+        <!-- Texto de sobreposição opcional para descrever o vídeo -->
+        <div class="content">
+            <h1>Bubaque</h1>
+            <p>A Ilha de Bubaque é um tesouro escondido do Atlântico, com suas praias imaculadas e uma riqueza cultural
+                única que encanta qualquer viajante.
+                As águas cristalinas da Ilha de Bubaque são um convite para explorar a beleza subaquática, enquanto suas
+                aldeias pitorescas são um lembrete de um modo de vida simples e tradicional.
+                Em Bubaque, o sorriso caloroso das pessoas e a hospitalidade genuína são tão envolventes quanto as paisagens
+                naturais, criando uma experiência de viagem inesquecível.
+            </p>
+            <!-- Use um botão para pausar/tocar o vídeo com JavaScript -->
+            <button id="myBtn" onclick="myFunction()">Pause</button>
+        </div>
     </div>
 
     <script>
@@ -88,6 +98,10 @@
             }
         }
     </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

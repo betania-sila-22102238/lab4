@@ -1,239 +1,204 @@
 <!DOCTYPE html>
-
 <html lang="pt">
 
 <head>
-
-    <Bubaque>
-        <meta charset="utf-8">
-        <meta name="author" content="Betânia Maria">
-        <meta name="description" content="Website sobre Bubaque">
-        <meta name="keywords" content="palavras chave">
-        <link rel="stylesheet" type="text/css" href="estilos.css">
-
+    <meta charset="utf-8">
+    <meta name="author" content="Betânia Maria">
+    <meta name="description" content="Website sobre Bubaque">
+    <meta name="keywords" content="palavras chave">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubaque</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
 
 <body>
+    <div class="container">
+        <header class="my-4 text-center">
+            <h1>Bubaque</h1>
+            <figure>
+                <img src="images/mango-lodge.jpg" alt="Bubaque" class="img-fluid">
+                <br>
+                <details>
+                    <figcaption>
+                        <p>Paraíso escondido</p>
+                    </figcaption>
+                </details>
+            </figure>
+        </header>
 
-    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Menu</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Voltar ao Menu de Laboratório</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="info.html">Informação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="multimedia.html">Multimédia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="local.html">Localização</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quizz.html">Quizz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html5-css.html">Html e Css</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-        <h1>Bubaque</h1>
-        <figure>
-            <img src="images/mango-lodge.jpg" alt="Bubaque">
-            <br>
-            <details>
-                <figcaption>
-                    <p>Paraíso escondido</p>
-                </figcaption>
-            </details>
+        <main>
+            <section class="my-4">
+                <h3>Quizz</h3>
+                <p>"Bem-vindo à nossa página sobre Bubaque! Se você é um entusiasta da viagem ou simplesmente mora na cidade, nosso quizz de conhecimento é a maneira perfeita de testar seus conhecimentos sobre essa incrível cidade. Com uma variedade de perguntas sobre a história, cultura, atrações turísticas e muito mais, você pode descobrir o quanto realmente sabe sobre Bubaque. Então, vamos começar a testar seus conhecimentos e descobrir se você é um verdadeiro especialista em Bubaque!"</p>
+            </section>
 
-        </figure>
-    </header>
+            <section class="my-4">
+                <form>
+                    <fieldset>
+                        <legend>Quizz sobre Bubaque</legend>
 
-    <style>
-        h1 {
-            color: rgb(0, 179, 255);
-        }
-    </style>
+                        <div class="form-group">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome" class="form-control" autofocus required>
+                        </div>
 
-    <nav>
-        <ul>
-            <ul>
-                <li><a href="../index.html">Voltar ao Menu de Laboratórios |</a></li>
-            </ul>
-        </ul>
-        <b><a href="index.html">Home |</a></b>
-        <b><a href="info.html">Informação |</a></b>
-        <b><a href="multimedia.html">Multimédia |</a></b>
-        <b><a href="local.html">Localização |</a></b>
-        <b><a href="quizz.html">Quizz |</a></b>
-        <b><a href="html5-css.html">Html e Css |</a></b>
+                        <div class="form-group">
+                            <label for="apelido">Apelido:</label>
+                            <input type="text" id="apelido" name="apelido" class="form-control" required>
+                        </div>
 
-    </nav>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
 
+                        <div class="form-group">
+                            <label for="continente">Em que continente está localizado Bubaque:</label>
+                            <input type="text" id="continente" name="continente" list="opcoes-continente" class="form-control" required>
+                            <datalist id="opcoes-continente">
+                                <option value="América">
+                                <option value="África">
+                                <option value="Ásia">
+                                <option value="Europa">
+                                <option value="Oceania">
+                                <option value="Antártida">
+                            </datalist>
+                        </div>
 
-    <main>
+                        <div class="form-group">
+                            <label>Qual é o nome da ilha onde está localizada a cidade de Bubaque?</label>
+                            <input type="text" name="pergunta1" class="form-control" required>
+                        </div>
 
-        <section>
+                        <div class="form-group">
+                            <label>Em que região e setor administrativo a ilha de Bubaque está localizada?</label>
+                            <select name="pergunta2" class="form-control" required>
+                                <option value="">Selecione uma opção</option>
+                                <option value="Região de Bolama e Setor de Bubaque">Região de Bolama e Setor de Bubaque</option>
+                                <option value="Região de Cacheu e Setor de Caió">Região de Cacheu e Setor de Caió</option>
+                                <option value="Região de Oio e Setor de Farim">Região de Oio e Setor de Farim</option>
+                            </select>
+                        </div>
 
-            <h3>Quizz</h3>
+                        <div class="form-group">
+                            <label for="País">País:</label>
+                            <input type="text" id="País" name="País" class="form-control" autocomplete="on" required>
+                        </div>
 
-            <p>"Bem-vindo à nossa página sobre Bubaque! Se você é um entusiasta da viagem ou simplesmente mora na
-                cidade, nosso quizz de conhecimento é a maneira perfeita de testar seus conhecimentos sobre essa
-                incrível cidade. Com uma variedade de perguntas sobre a história, cultura, atrações turísticas e muito
-                mais, você pode descobrir o quanto realmente sabe sobre Bubaque. Então, vamos começar a testar seus
-                conhecimentos e descobrir se você é um verdadeiro especialista em Bubaque!"</p>
+                        <div class="form-group">
+                            <label for="data">Qual é a data da independência do país onde se encontra Bubaque:</label>
+                            <input type="date" id="data" name="data" class="form-control" required>
+                        </div>
 
-        </section>
+                        <div class="form-group">
+                            <label for="cor">Selecione as 4 cores que compõem a bandeira do país onde se encontra Bubaque:</label>
+                            <div class="d-flex justify-content-between">
+                                <input type="color" id="cor" name="cor" class="form-control" style="width: 20%;">
+                                <input type="color" id="cor" name="cor" class="form-control" style="width: 20%;">
+                                <input type="color" id="cor" name="cor" class="form-control" style="width: 20%;">
+                                <input type="color" id="cor" name="cor" class="form-control" style="width: 20%;">
+                            </div>
+                        </div>
 
-        <section>
+                        <div class="form-group">
+                            <p>Qual foi a ilha mais afetada pela presença dos europeus?</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="resposta1" value="bubaque" id="bubaque">
+                                <label class="form-check-label" for="bubaque">Bubaque</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="resposta1" value="bolama" id="bolama">
+                                <label class="form-check-label" for="bolama">Bolama</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="resposta1" value="bijagos" id="bijagos">
+                                <label class="form-check-label" for="bijagos">Bijagós</label>
+                            </div>
+                        </div>
 
-            <fieldset>
+                        <div class="form-group">
+                            <p>Que tipo de atividades os alemães realizaram em Bubaque?</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="resposta2" value="extraccao-oleo-palma" id="extraccao-oleo-palma">
+                                <label class="form-check-label" for="extraccao-oleo-palma">Construíram uma fábrica para extração do óleo de palma.</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="resposta2" value="porto" id="porto">
+                                <label class="form-check-label" for="porto">Construíram um porto para navios de grande tonelagem.</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="resposta2" value="quinta" id="quinta">
+                                <label class="form-check-label" for="quinta">Construíram uma quinta experimental para cultivo de algodão.</label>
+                            </div>
+                        </div>
 
-                <legend>Quizz sobre Bubaque</legend>
+                        <div class="form-group">
+                            <label for="resposta3">Qual o nome da área onde os alemães construíram uma quinta experimental em Bubaque?</label>
+                            <input type="text" name="resposta3" id="resposta3" class="form-control" required>
+                        </div>
 
-                <fieldset>
-                    <legend>info</legend>
+                        <div class="form-group">
+                            <label for="pergunta3">Qual é a área total da ilha de Bubaque?</label>
+                            <input type="number" name="pergunta3" id="pergunta3" class="form-control" required>
+                        </div>
 
-                    <form id="form1" action="/processar-formulario" method="post">
+                        <div class="form-group">
+                            <label for="pergunta4">Quantos habitantes aproximadamente vivem na ilha de Bubaque?</label>
+                            <input type="range" name="pergunta4" id="pergunta4" min="0" max="20000" step="100" class="form-control-range" required>
+                        </div>
 
-                        <label for="nome">Nome:</label>
+                        <div class="form-group">
+                            <label for="pergunta5">O que faz da ilha de Bubaque uma importante atração turística na Guiné-Bissau?</label>
+                            <textarea name="pergunta5" id="pergunta5" rows="4" class="form-control" placeholder="Digite sua resposta aqui..." required></textarea>
+                        </div>
 
-                        <input type="text" id="nome" name="nome" size="30" form="form1" autofocus><br><br>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
 
-                        <label for="apelido">Apelido:</label>
+        <footer class="text-center my-4">
+            <p>Betânia Maria Queta Silá.</p>
+        </footer>
+    </div>
 
-                        <input type="text" id="apelido" name="apelido"><br><br>
-
-                    </form>
-
-                    <form id="form2" action="/processar-outro-formulario" method="post">
-
-                        <label for="email">Email:</label>
-
-                        <input type="email" id="email" name="email" form="form2">
-
-                    </form>
-
-                </fieldset>
-
-                <fieldset>
-
-                    <legend>Perguntas</legend>
-
-                    <label for="continente">
-                        <p>
-                            Em que continente está localizado Bubaque:
-                        </p>
-
-                    </label>
-
-                    <input type="text" id="continente" name="continente" list="opcoes-continente">
-                    <datalist id="opcoes-continente">
-                        <option value="América">
-                        <option value="África">
-                        <option value="Ásia">
-                        <option value="Europa">
-                        <option value="Oceania">
-                        <option value="Antártida">
-
-                    </datalist>
-
-                    <label>
-                        <p>Qual é o nome da ilha onde está localizada a cidade de Bubaque?</p>
-                    </label>
-                    <input type="text" name="pergunta1" required>
-
-                    <label>
-                        <p> Em que região e setor administrativo a ilha de Bubaque está localizada?</p>
-                    </label>
-
-                    <select name="pergunta2" required>
-                        <option value="">Selecione uma opção</option>
-                        <option value="Região de Bolama e Setor de Bubaque">Região de Bolama e Setor de Bubaque</option>
-                        <option value="Região de Cacheu e Setor de Caió">Região de Cacheu e Setor de Caió</option>
-                        <option value="Região de Oio e Setor de Farim">Região de Oio e Setor de Farim</option>
-                    </select>
-
-                    <label for="País">País:</label>
-
-                    <input type="text" id="País" name="País" autocomplete="on">
-
-                    <label for="data">
-                        <p>
-                            Qual é a data da independência do país onde se encontra Bubaque:
-                        </p>
-
-                    </label>
-
-                    <input type="date" id="data" name="data">
-
-                    <label for="cor">
-                        <p>
-                            Selecione as 4 cores que compõem a bandeira do país onde se encontra Bubaque:
-                        </p>
-                    </label>
-
-                    <input type="color" id="cor" name="cor">
-                    <input type="color" id="cor" name="cor">
-                    <input type="color" id="cor" name="cor">
-                    <input type="color" id="cor" name="cor">
-
-                    <p>Qual foi a ilha mais afetada pela presença dos europeus?</p>
-
-                    <label>
-                        <input type="radio" name="resposta1" value="bubaque">
-                        Bubaque
-                    </label><br>
-                    <label>
-                        <input type="radio" name="resposta1" value="bolama">
-                        Bolama
-                    </label><br>
-                    <label>
-                        <input type="radio" name="resposta1" value="bijagos">
-                        Bijagós
-                    </label><br>
-
-                    <p>Que tipo de atividades os alemães realizaram em Bubaque?</p>
-
-                    <label>
-                        <input type="checkbox" name="resposta2" value="extraccao-oleo-palma">
-                        Construíram uma fábrica para extração do óleo de palma.
-                    </label><br>
-                    <label>
-                        <input type="checkbox" name="resposta2" value="porto">
-                        Construíram um porto para navios de grande tonelagem.
-                    </label><br>
-                    <label>
-                        <input type="checkbox" name="resposta2" value="quinta">
-                        Construíram uma quinta experimental para cultivo de algodão.
-                    </label><br>
-
-                    <p>Qual o nome da área onde os alemães construíram uma quinta experimental em Bubaque?</p>
-
-                    <label>
-                        <input type="text" name="resposta3">
-                    </label><br>
-
-                    <label>
-                        <p> Qual é a área total da ilha de Bubaque? </p>
-                    </label>
-                    <input type="number" name="pergunta3" required>
-
-                    <label>
-                        <p>Quantos habitantes aproximadamente vivem na ilha de Bubaque?</p>
-                    </label>
-                    <input type="range" name="pergunta4" min="0" max="20000" step="100" required>
-
-                    <label>
-                        <p> O que faz da ilha de Bubaque uma importante atração turística na Guiné-Bissau? </p>
-                    </label>
-                    <textarea name="pergunta5" rows="4" cols="50" placeholder="Digite sua resposta aqui..."
-                        required></textarea>
-
-
-                    <input type="submit" value="Enviar">
-
-                    <form method="POST" action="mailto: betaniamariaqueta05@gmail.com" enctype="multipart/form-data">
-                    </form>
-
-                </fieldset>
-            </fieldset>
-
-        </section>
-
-
-    </main>
-
-    <footer>
-
-        <p>
-            Betânia Maria Queta Silá, aluna número 22102238, estudante de engenharia informática na
-            ULHT, 2º ano.
-        </p>
-
-    </footer>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
